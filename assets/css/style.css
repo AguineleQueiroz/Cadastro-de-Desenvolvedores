@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Open+Sans:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --font-tittle:'Montserrat', sans-serif;
+    --main-font: 'Open Sans', sans-serif;
+    
+    --primary-color: #50409a;
+    --white-color: white;
+    --border-color-nav: #eeee;
+    --menu-effect: #FEE440;
+    --color-logo: #F0BB62;
+    --color-bg: #553ace;
+    --gray-bg-ligt: #d4d4d4;
+    --periodo-letter: #826fd6;
+    --color-bg-form: #F8F9FA;
+    --color-black: #1a191902;
+    --footer-color: #2e235f5e;
+    --gray-line-footer: #686666c5;
+}
+
+body{
+    display: flex;
+    font-family: var(--font-tittle);
+    background: var(--primary-color);
+    color: var(--color-bg);
+    justify-content:center;
+    padding-top: 0.8rem;
+}
+
+h1{
+    font-size: 1.6rem;
+    font-weight:600;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+label{
+    display: block;
+    font-size: 0.8rem;
+    padding-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+input{
+    padding: 0.3rem;
+    border-radius: 5rem;
+    border: 0.1rem solid var(--gray-line-footer);
+    outline: none;
+    
+}
+
+input::placeholder{
+    font-size: 0.7rem;
+    padding: 0.3rem 0rem 0.3rem 0.5rem;
+    color: var(--gray-line-footer);
+}
+
+fieldset{
+    border: none;
+}
+
+textarea{
+    width: 27.8vw;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--gray-line-footer);
+    outline: none;
+}
+
+textarea::placeholder{
+    color: var(--color-bg);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.usr-dados{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+}
+
+.usr-dados div{
+    padding: 0 1rem;
+}
+
+.usr-email{
+    max-width: 30vw;
+    margin: auto;
+}
+
+.usr-email input{
+    width: 97%;
+    margin: auto;
+}
+
+.form{
+    width: 35vw;
+    height: 90vh;
+    box-shadow: 1rem 1rem 1rem 1rem var(--color-black) ;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background: var(--color-logo);
+    border-radius: 0.2rem;
+}
+
+.dev-usr, .chk-box-fd{
+    padding-left: 2rem;
+}
+
+.area-tech, .chk-box{
+    display: block;
+    background: var(--white-color);
+    color: var(--color-bg);
+    width: 28.7vw;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--gray-line-footer);
+}
+
+.area-tech > label{
+    display: inline-block;
+    padding: 0.1rem 1.3rem;
+}
+
+.g1{
+    padding-bottom: 0.5rem;
+}
+
+.g1 input + label, .g2 input + label{
+    display: inline-block;
+    padding-right: 0.4rem;
+}
+
+.chk-box-fd, .chk-box{
+    width: 21vw;
+}
+
+.senioridade{
+    float: right;
+    padding-left: 1.5rem;
+}
+
+.senioridade select{
+    width: 5.8vw;
+    border: 0.1rem solid var(--gray-line-footer);
+    border-radius: 0.2rem;
+    outline: none;
+    color: var(--color-bg);
+    background-color: var(--white-color);
+}
+
+.message-area{
+    display: block;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.box-opt{
+    display: flex;
+}
+
+.btn{
+    display: block;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+    color: var(--white-color);
+    background-color: var(--color-bg);
+    box-shadow: 0.1rem 0.1rem 1rem 0.1rem var(--footer-color);
+}

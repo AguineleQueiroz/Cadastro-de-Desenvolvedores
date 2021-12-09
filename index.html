@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <form class="form">
+        <h1 id="titulo">Cadastro de Desenvolvedores</h1>
+
+        <fieldset>
+            <div class="usr-dados">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input  placeholder="João" maxlength="40" type="text" name="nome" id="nome" required>
+                </div>
+                
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input placeholder="Silva" maxlength="40" type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="usr-email">
+            <label for="email"><br> E-mail</label>
+            <input placeholder="joaosilva@outlook.com" maxlength="80" type="email" name="email" id="email" required>
+        </div>
+
+        <div class="dev-usr">
+            <label id="tittle-lb" for="tittle"><br> De qual lado da aplicação você desenvolve?</label>
+            <div class="area-tech">
+                <label for="frontend">
+                    <input type="radio" name="devweb" value="frontend" id="frontend" checked > Front-End
+                </label>
+                <label for="backend">
+                    <input type="radio" name="devweb" value="backend" id="backend"> Back-End
+                </label>
+                <label for="fullstack">
+                    <input type="radio" name="devweb" value="full-stack" id="fullstack"> Full-Stack
+                </label>
+            </div>
+        </div>
+
+        <div class="box-opt">
+            <fieldset class="chk-box-fd">
+                <label><br> Tecnologias que domina: </label>
+                <div class="chk-box">
+                    <div class="g1">
+                        <input type="checkbox" name="tec1" id="tec1" value="HTML">
+                        <label for="tc1">HTML</label>
+                        <input type="checkbox" name="tc2" id="tc2" value="CSS">
+                        <label for="tc2">CSS</label>
+                        <input type="checkbox" name="tc3" id="tc3" value="JavaScript">
+                        <label for="tc3">JavaScript</label>
+                        <input type="checkbox" name="tc4" id="tc4" value="PHP">
+                        <label for="tc4">PHP</label>
+                    </div>
+                    <div class="g2">
+                        <input type="checkbox" name="tc5" id="tc5" value="Python">
+                        <label for="tc5">Python</label>
+                        <input type="checkbox" name="tc6" id="tc6" value="C++">
+                        <label for="tc6">C++</label>
+                        <input type="checkbox" name="tc7" id="tc7" value="TypeScript">
+                        <label for="tc7">TypeScript</label>
+                        <input type="checkbox" name="tc8" id="tc8" value="Java">
+                        <label for="tc8">Java</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="senioridade">
+                <label for="senioridade"><br> Senioridade</label>
+                <select name="senioridade" id="senioridadee">
+                    <option selected disable value=**>--</option>
+                    <option> Júnior</option>
+                    <option> Pleno</option>
+                    <option> Sênior</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="message-area campo">
+            <br>
+            <label for="message">Experiência</label>
+            <textarea placeholder="Escreva um pouco da sua Experiência aqui..." rows="6"  type="text" name="msg" id="msg"></textarea>
+        </div>
+
+    <button class="btn" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
